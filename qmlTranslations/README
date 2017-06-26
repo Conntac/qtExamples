@@ -1,0 +1,11 @@
+There are a few methods to change the translation of a QML-based application
+dynamically, i.e. at runtime (all of which have their pros and cons). 
+
+You can use a trick with property bindings as shown 
+[here](https://wiki.qt.io/How_to_do_dynamic_translation_in_QML)
+We tested this with Qt5.9 (which requires a few changes to the code linked 
+above).
+
+Another thing you could do is to use a Loader and reload the source element
+after translation. This is a minimal, complete and verifiable example of how
+to do this.
